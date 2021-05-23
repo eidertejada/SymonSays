@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Simon Says</title>
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./media.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+     <link rel="icon" href="./logo.png">
+</head>
+<body id="body" class="blue">
+     
+     <section class="data-game opacity" id="data-game">
+          <h1>Symon Says Version Beta</h1>
+          <section action="" class="level-container">
+               <div class="name-section">
+                    <h3>Name:</h3>
+                    <p id="name"></p>
+               </div>
+               <div class="level-section">
+                    <h3>Level:</h3>
+                    <p id="level"></p>
+               </div>
+          </section>
+
+     </section>
+     <section class="container opacity" id="gameboard">
+          <div id="azul" data-color="azul" class="azul"></div>
+          <div id="rojo" data-color="rojo" class="rojo"></div>
+          <div id="amarillo" data-color="amarillo" class="amarillo"></div>
+          <div id="violeta" data-color="violeta" class="violeta"></div>
+     </section>
+     <footer>
+          <p>Developed by Eider Tejada ALL RIGHTS RESERVED 2021</p>
+     </footer>
+
+     <button id="btn-empezar" class="btn-start" onclick="empezarJuego()">Start Game!</button>
+     <button id="change-color" onclick="cambiarColor()">Change Color</button>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="./app.js"></script>
+</body>
+</html>
